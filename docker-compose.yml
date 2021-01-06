@@ -8,12 +8,15 @@ services:
   #   ports: 
   #     - '8080:8080'
 
-  results:
-    build: ./
+  api:
+    build: api/
     # depends_on:
     #   - 'database'
     ports:
       - '3000:3000'
+    volumes:
+      - ./api:/src/app
+      - /src/app/node_modules
 
   # database:
   #   image: mongo:latest
