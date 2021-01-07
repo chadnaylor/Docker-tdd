@@ -7,7 +7,7 @@ describe("API", function () {
             .expect(200)
             .end(function (err, res) {
                 if (err) return done(err)
-                expect(res.body.length).toEqual(0)
+                expect(res.body).toBeDefined()
                 done();
             })
     })
