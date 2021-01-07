@@ -18,5 +18,11 @@ services:
       - ./api:/src/app
       - /src/app/node_modules
 
+  #  db:
+  #   image: postgres
+  #   restart: always
+  #   environment:
+  #     POSTGRES_PASSWORD: example
+
   # database:
   #   image: mongo:latest

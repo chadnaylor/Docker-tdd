@@ -8,6 +8,8 @@ COPY . /src/app
 
 RUN npm install
 
+RUN npx knex migrate:latest
+
 EXPOSE 3000
 
 CMD [ "npm", "start" ]
