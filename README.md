@@ -1,3 +1,6 @@
+Run: `docker-compose up`
+Test: `docker exec docker-tdd_api_1 npm test`
+
 Pair Project - Check out a book
 
 Create an Express API that achieves the following:
