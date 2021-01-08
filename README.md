@@ -1,5 +1,6 @@
 Run: `docker-compose up`
-Test: `docker exec docker-tdd_api_1 npm test`
+Test backend: `docker exec docker-tdd_api_1 npm test`
+Test frontend: `docker exec docker-tdd_frontend_1 npm test`
 
 Pair Project - Check out a book
 
