@@ -7,6 +7,11 @@ services:
     #   - 'database'
     ports: 
       - '3001:3000'
+    volumes:
+      - ./libraryfrontend:/src/app
+      - /src/app/node_modules
+    environment: 
+      - API_URL=http://api:3000
 
   api:
     build: api/
